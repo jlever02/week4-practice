@@ -1,37 +1,147 @@
+* {
+  margin:0;
+  padding:0;
+}
+
 body {
   /* Change my background, and set global font family.*/
+    background-color:black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.clearfix:after {
+  content: "";    
+  display: block;    
+  clear: both; 
 }
 
 .content-wrapper {
   /* Center on page, set width */
+  background-color:white;
+  margin-left: 12.5vmax;
+  width:75vmax; 
+  min-width:100vmin; 
+  height:100vmin;
 }
 
-header h1 {
-  /* Make bigger and color, Change our font family to a sans serif and center */
-  
+header {
+  width:100%;
+  min-width:100%;
+  white-space: nowrap;
 }
+
+  header h1 {
+    /* Make bigger and color, Change our font family to a sans serif and center */
+    text-align: center;
+    font-size:4vmin;
+    color:mediumpurple;  
+    padding:1em 0 .25em;
+    font-weight:600;
+  }
 
 .main-nav {
   /* Change background color, remove bullets, border on each individual nav element. create and float links, center our content within the links. width, font color, change font family */
+  width:100%;  
 }
-
-aside {
-  /* clear float, background color, float, font color */
-}
-  aside ul {
-    /* clear both, links? */
+  .main-nav ul li {
+    width:14.285%;
+    list-style-type: none;
+    float:left;
+    display:inline-flex;
+    background-color:mediumpurple;
+    border-left:1px solid indigo;
+    padding:.25em;
   }
+    .main-nav ul li:first-child {
+        border-left:none;
+      }
+    .main-nav ul li a {
+      color:white;
+      text-decoration:none;
+      padding:.25rem 0;
+      text-align:center;
+      width:100%;
+      font-size:2.3vmin;
+      height:3.5vmin;
+    }
+      .main-nav ul li a:hover {
+        font-size:2.4vmin;
+        text-decoration:underline;
+        text-align:center;
+      }
+section {
+  /* Setting the container height for aside and article */
+  height:70vh;
+}     
+aside {
+  /* clear float, background color, float, font color set height equal to parent element*/
+  clear:both;
+  width:25%;
+  min-height:100%;
+  max-height:100%;
+  float:left;
+  background-color: #ebd6f5;
+}
+  aside ul li {
+    /* clear both, links? */
+    width:100%;
+    height:4.7vh;
+    text-align:center;
+    padding:.5vh 0;
+    margin:.5vw 0;
+    font-weight: 700;
+  }
+    aside ul li:first-child {
+      margin-top:3em;
+    }
+    aside ul li a {
+      width:100%;
+      text-decoration:none;
+      font-size:2.5vmin;
+      color:white;
+    }
+      aside ul li a:hover {
+        text-decoration:underline;
+        font-size:3.1vmin;
+      }
 
 article {
-  /* background-color, float to the right?, font size  */
+  /* background-color, float to the right?, font size, setting the size to be as tall as parent container (section) */
+  float:left;
+  width:75%;
+  min-height:100%;
+  background-color:lightgray;
 }
 
 figure {
 /* Center, size of the font */  
+  width:65vmin;
+  margin:7% auto 0;
 }
+  figure img {
+    width:100%;
+    height:auto;
+    box-shadow: 10px 10px 25px grey;
+    margin:auto;
+  }
+  figure figcaption {
+    margin-top:2em;
+    text-align:center;
+    padding: 0 1.5em;
+    font-size:2.3vmin;
+  }
 
 footer {
   /* float the images, create links, center links */
-
+  clear:both;
+  height:12vmin;
 }
+  footer img {
+    margin:.75em;
+    width:8vmin;
+    min-width:5vmin;
+  }
+    footer a:first-of-type {
+      margin-left:40vmin;
+    }
 
